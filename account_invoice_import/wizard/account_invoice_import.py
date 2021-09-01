@@ -656,7 +656,6 @@ class AccountInvoiceImport(models.TransientModel):
             'name': _('Adjustment'),
             'quantity': 1,
             'price_unit': diff_amount,
-            'account_id': account.id,
             }
         # no taxes nor product on such a global adjustment line
         if import_config['invoice_line_method'] == 'nline_no_product':
